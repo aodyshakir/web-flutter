@@ -9,16 +9,17 @@ class MainContentDesktop extends StatelessWidget {
           Row(
             children: <Widget>[
               Flexible(
-                  child: Container(
-                child: Text(
-                  'Flutter is Google’s UI toolkit for building beautiful, natively compiled applications for mobile, web, and desktop from a single codebase.',
-                  style: TextStyle(color: Colors.cyan, fontSize: 20),
+                child: Container(
+                  child:const Text(
+                    'Flutter is Google’s UI toolkit for building beautiful, natively compiled applications for mobile, web, and desktop from a single codebase.',
+                    style: TextStyle(color: Colors.cyan, fontSize: 20),
+                  ),
                 ),
-              )),
+              ),
               Container(
                 width: 500,
                 height: 400,
-                decoration: BoxDecoration(
+                decoration:const BoxDecoration(
                   image: DecorationImage(
                     image: AssetImage('assets/images/dahab.jpg'),
                   ),

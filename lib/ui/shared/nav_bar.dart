@@ -29,35 +29,42 @@ class NavBarWidget extends StatelessWidget {
             flex: 1,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.end,
-              
               children: <Widget>[
-                TextButton(
-                  
-                  onPressed: () {
-                    Navigator.of(context)
-                        .pushReplacementNamed(HomePage.routeName);
-                  },
-                  child: const Text('Home'),
-                ),
-                TextButton(
-                  onPressed: () {
-                    Navigator.of(context)
-                        .pushReplacementNamed(AboutPage.routeName);
-                  },
-                  child: const Text('About'),
-                ),
-                TextButton(
-                  onPressed: () {
-                    Navigator.of(context)
-                        .pushReplacementNamed(LearnPage.routeName);
-                  },
-                  child: const Text('Learn'),
-                ),
-                TextButton(
+                Expanded(
+                  child: TextButton(
                     onPressed: () {
-                      Navigator.of(context).pushReplacementNamed(SupportPage.routeName);
+                      Navigator.of(context)
+                          .pushReplacementNamed(HomePage.routeName);
                     },
-                    child: const Text('Support')),
+                    child: const Text('Home'),
+                  ),
+                ),
+                Expanded(
+                  child: TextButton(
+                    onPressed: () {
+                      Navigator.of(context)
+                          .pushReplacementNamed(AboutPage.routeName);
+                    },
+                    child: const Text('About'),
+                  ),
+                ),
+                Expanded(
+                  child: TextButton(
+                    onPressed: () {
+                      Navigator.of(context)
+                          .pushReplacementNamed(LearnPage.routeName);
+                    },
+                    child: const Text('Learn'),
+                  ),
+                ),
+                Expanded(
+                  child: TextButton(
+                      onPressed: () {
+                        Navigator.of(context)
+                            .pushReplacementNamed(SupportPage.routeName);
+                      },
+                      child: const Text('Support')),
+                ),
               ],
             ),
           )
